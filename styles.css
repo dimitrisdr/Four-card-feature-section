@@ -35,6 +35,7 @@ body {
 .main-title {
     display: grid;
     margin-inline: auto;
+    font-weight: 600;
 }
 
 .title-thin {
