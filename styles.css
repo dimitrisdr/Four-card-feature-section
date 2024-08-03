@@ -80,6 +80,7 @@ body {
     gap: 2rem;
     box-shadow: 0 10px 10px -5px var(--Grayish-Blue);
     position: relative;
+    border-radius: 8px;
 }
 
 .main-info {
@@ -96,6 +97,7 @@ body {
     left: 0;
     right: 0;
     height: 4px;
+    border-radius: 8px 8px 0 0;
 }
 
 .blue-card::before {
