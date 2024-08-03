@@ -45,6 +45,7 @@ body {
     color: var(--Very-Dark-Blue);
 }
 
+
 .card-title {
     font-size: 1.3rem;
 }
@@ -52,6 +53,11 @@ body {
 .title-info, .card-info {
     color: var(--Grayish-Blue);
     line-height: 1.5;
+}
+
+.title-info {
+    max-width: 60ch;
+    margin-inline: auto;
 }
 
 .wraper {
@@ -73,6 +79,10 @@ body {
     gap: 2rem;
     box-shadow: 0 10px 10px -5px var(--Grayish-Blue);
     position: relative;
+}
+
+.main-info {
+    line-height: 1.7;
 }
 
 .icon-container svg {

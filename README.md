@@ -20,12 +20,12 @@ Users should be able to:
 
 ### Screenshot
 
-![project image](./screenshot.jpg)
+![project image](project.jpeg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/dimitrisdr/Four-card-feature-section.git)
+- Live Site URL: [Add live site URL here](https://dimitrisdr.github.io/Four-card-feature-section/)
 
 ## My process
 
