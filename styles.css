@@ -1,0 +1,152 @@
+*,*::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    background-color: var(--Very-Light-Gray);
+    display: grid;
+    place-content: center;
+    gap: 3rem;
+    margin-inline: auto;
+    margin-block: 2rem;
+}
+
+.header {
+    display: grid;
+    gap: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    padding-inline: 2rem;
+}
+
+.main-title {
+    display: grid;
+    margin-inline: auto;
+}
+
+.title-thin {
+    font-weight: 200;
+}
+
+.main-title, .card-title {
+    color: var(--Very-Dark-Blue);
+}
+
+.card-title {
+    font-size: 1.3rem;
+}
+
+.title-info, .card-info {
+    color: var(--Grayish-Blue);
+    line-height: 1.5;
+}
+
+.wraper {
+    display: grid;
+    grid-template-columns: 550px;
+    place-content: center;
+    gap: 1rem;
+}
+
+.two-el-col {
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    box-shadow: 0 10px 10px -5px var(--Grayish-Blue);
+    position: relative;
+}
+
+.icon-container svg {
+    float: right;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+}
+
+.blue-card::before {
+    background-color: var(--Blue);
+}
+
+.red-card::before {
+    background-color: var(--Red);
+} 
+
+.yellow-card::before {
+    background-color: var(--Orange);
+} 
+
+@media screen and (max-width:375px) {
+    .main-title {
+        font-size: 1.3rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-info, .title-info {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media screen and (376px < width < 465px) {
+    .main-title {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media screen and (max-width:1099px) {
+    .wraper {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin-inline: auto;
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width:1100px) {
+
+    .wraper {
+        grid-template-columns: repeat(3, 350px);
+    }
+
+    .one-el-col {
+        display: grid;
+        align-items: center;
+    }
+
+    .two-el-col {
+        place-content: center;
+    }
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
